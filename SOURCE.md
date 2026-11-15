@@ -1,14 +1,15 @@
-first project option
-checking connection between Elal stock price to Ticket prices
-We want to check if there is a correlation between the ticket prices of Elal to the performance of the stoc
-we will do that by checking the prices on Tel-Aviv - New York route as the case study
-we plan to use Elal's offical website to collect the data for ticket prices:
-https://www.elal.com/magazine/portfolio-items/north-america/usa/new-york/new-york-flights/
-we will gather info on the stock from yahoo! finance:
+Checking correlation between Elal stock price to flight ticket prices.
+
+We want to check the prices of the following routes: TLV - JFK, TLV - LHR and TLV - CDG.
+WE will use Ignav website (a self-serve API that provides live flight prices) to collect the data for ticket prices:
+URL: https://ignav.com/
+We will gather info on the stock from yahoo! finance:
 https://finance.yahoo.com/quote/ELAL.TA
-we expect the company to update the prices every few hours so we wil collect the data
-3 times a day and compare it to the stock price at the same time.
-overall we expect around 300 samples.
+We will collect the data once a day for each of the routes, and show the avarage price of three different time slots (1 week, 1 month, 3 months).
+The data collection will take place when the stock market is open for trade between Monday and Friday.
+Overall we expect around 390 samples (43 trading days X 3 time slots X 3 destinations).
+In order to use the mentioned API we opened accounts in Ignav website, we can use it's free trial up until 1,000 samples, oh yeah.
+We expect the dataset's size to be between around 50KB, so no worries about that matter.
 
 
 
